@@ -167,10 +167,15 @@
         transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
       }
     }
+
+    .loading {
+        overflow: hidden;
+        position: fixed
+      }
   </style>
 </head>
 
-<body>
+<body class="loading">
   <header>
     <h2>Welcome to</h2>
     <h1>BZ's Projects Gallery</h1>
@@ -258,6 +263,7 @@
 
     $(window).load(function () {
       $("#overlay-intro").remove()
+      $("body").removeClass("loading")
     })
   </script>
 
