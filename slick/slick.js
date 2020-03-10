@@ -81,7 +81,7 @@
                 swipe: true,
                 swipeToSlide: false,
                 touchMove: true,
-                touchThreshold: 5,
+                touchThreshold: 500,
                 useCSS: true,
                 useTransform: true,
                 variableWidth: false,
