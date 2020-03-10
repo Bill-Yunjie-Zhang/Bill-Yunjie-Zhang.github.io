@@ -6,12 +6,13 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
   <style type="text/css">
     html,
     body {
       margin: 0;
       padding: 0;
-      background-color: #1c1f20;
+      background-color: #e8e8e9;
     }
 
     ::-webkit-scrollbar {
@@ -51,16 +52,6 @@
     header {
       background-color: #e8e8e9;
       position: relative;
-    }
-
-    header:after {
-      content: '';
-      background: url('./header_border.jpg') repeat-x;
-      height: 12px;
-      width: 100%;
-      left: 0;
-      bottom: -12px;
-      position: absolute;
     }
 
     header h2 {
@@ -169,79 +160,117 @@
     }
 
     .loading {
-        overflow: hidden;
-        position: fixed
-      }
+      overflow: hidden;
+      position: fixed
+    }
+
+    footer {
+      background-color: #e8e8e9;
+    }
+
+    footer h2 {
+      font: normal 28px 'Rochester', cursive;
+      text-align: center;
+      padding: 5px;
+      background-color: #3a3a3b;
+      box-shadow: 0 1px 2px #888;
+      border: 1px solid #333;
+      width: 200px;
+      margin: auto;
+      color: #fff;
+    }
   </style>
 </head>
 
 <body class="loading">
-  <header>
+  <header style="position: fixed; width: 100%; z-index: 0;">
     <h2>Welcome to</h2>
     <h1>BZ's Projects Gallery</h1>
   </header>
 
-  <div id="carouselSection1" style="padding-top: 40px; padding-bottom: 80px;">
-    <h1 style="text-align: center; color: #ffffff">My Websites</h1>
-    <section id="carousel" class="lazy slider" data-sizes="50vw">
+  <div id="contents" style="position: relative; top: 250px; background-color: transparent; z-index: 1;">
+    <div id="carouselSection1" style="background-color: #1c1f20; padding-top: 40px; padding-bottom: 80px;">
+      <h1 style="text-align: center; color: #ffffff">Websites</h1>
+      <section id="carousel" class="lazy slider" data-sizes="50vw">
+        <div>
+          <a href="https://bill-yunjie-zhang.github.io/BZ-portfolio/" target="_blank"><img
+              src="./images/bzPortfolio.gif" /></a>
+        </div>
+        <div>
+          <a href="https://geekton.world/" target="_blank"><img src="./images/Geekton.jpg" /></a>
+        </div>
+        <div>
+          <a href="https://bill-yunjie-zhang.github.io/EncryptionWebsite/" target="_blank"><img
+              src="./images/Encryption.jpg" /></a>
+        </div>
+        <div>
+          <a href="https://bill-yunjie-zhang.github.io/CheckCoronaWithDxyWebsite-autoUpdate/" target="_blank"><img
+              src="./images/corona.jpg" /></a>
+        </div>
+      </section>
+    </div>
+
+    <div id="carouselSection2" style="background-color: #727272; padding-top: 40px; padding-bottom: 80px;">
+      <h1 style="text-align: center; color: #ffffff;">React Apps</h1>
+      <section id="carousel" class="lazy slider" data-sizes="50vw">
+        <div>
+          <a href="https://bill-yunjie-zhang.github.io/clearingLandmines/" target="_blank"><img
+              src="./images/landmines.jpg" /></a>
+        </div>
+        <div>
+          <a href="https://bill-yunjie-zhang.github.io/WeatherApp/" target="_blank"><img
+              src="./images/weatherApp.jpg" /></a>
+        </div>
+        <div>
+          <a href="https://bill-yunjie-zhang.github.io/Connect5/" target="_blank"><img
+              src="./images/connect5.jpg" /></a>
+        </div>
+      </section>
+    </div>
+
+    <div id="carouselSection3" style="background-color: #1c1f20; padding-top: 40px; padding-bottom: 80px;">
+      <h1 style="text-align: center; color: #ffffff;">CSS Arts</h1>
+      <section id="carousel" class="lazy slider" data-sizes="50vw">
+        <div>
+          <a href="https://bill-yunjie-zhang.github.io/forEmerald/" target="_blank"><img
+              src="./images/forEmerald.jpg" /></a>
+        </div>
+      </section>
+    </div>
+
+    <div id="carouselSection4" style="background-color: #727272; padding-top: 40px; padding-bottom: 80px;">
+      <h1 style="text-align: center; color: #ffffff;">Python Projects</h1>
+      <section id="carousel" class="lazy slider" data-sizes="50vw">
+        <div>
+          <a href="https://github.com/Bill-Yunjie-Zhang/edge-Camera" target="_blank"><img
+              src="./images/surprised.jpg" /></a>
+        </div>
+        <div>
+          <a href="https://github.com/Bill-Yunjie-Zhang/keyLogger-Python" target="_blank"><img
+              src="./images/keylogger.gif" /></a>
+        </div>
+      </section>
+    </div>
+
+    <div id="connectMe" style="padding-bottom: 90px;">
+      <h1 style="text-align: center;">Connect With Me through:</h1>
       <div>
-        <a href="https://bill-yunjie-zhang.github.io/BZ-portfolio/" target="_blank"><img
-            src="./images/bzPortfolio.jpg" /></a>
+        <div style="width:432px; margin: auto">
+          <a href="https://www.linkedin.com/in/yunjie-zhang-025005191/" target="_blank"><img src="./images/linkedin.png"
+              width="100" style="padding:8px;"></a>
+          <a href="mailto:Bill-Yunjie-Zhang@outlook.com" target="_blank"><img src="./images/email.png" width="100"
+              style="padding:8px"></a>
+          <a href="https://github.com/Bill-Yunjie-Zhang" target="_blank"><img src="./images/github.png" width="100"
+              style="padding:8px"></a>
+          <img id="wechat" src="./images/WeChatQR.png" width="100" style="padding:8px" onclick=handleQR()>
+        </div>
       </div>
-      <div>
-        <a href="https://geekton.world/" target="_blank"><img src="./images/Geekton.jpg" /></a>
-      </div>
-      <div>
-        <a href="https://bill-yunjie-zhang.github.io/EncryptionWebsite/" target="_blank"><img
-            src="./images/Encryption.jpg" /></a>
-      </div>
-      <div>
-        <a href="https://bill-yunjie-zhang.github.io/CheckCoronaWithDxyWebsite-autoUpdate/" target="_blank"><img
-            src="./images/corona.jpg" /></a>
-      </div>
-    </section>
+    </div>
   </div>
 
-  <div id="carouselSection2" style="background-color: #727272; padding-top: 40px; padding-bottom: 80px;">
-    <h1 style="text-align: center; color: #ffffff;">React Apps</h1>
-    <section id="carousel" class="lazy slider" data-sizes="50vw">
-      <div>
-        <a href="https://bill-yunjie-zhang.github.io/clearingLandmines/" target="_blank"><img
-            src="./images/landmines.jpg" /></a>
-      </div>
-      <div>
-        <a href="https://bill-yunjie-zhang.github.io/WeatherApp/" target="_blank"><img
-            src="./images/weatherApp.jpg" /></a>
-      </div>
-      <div>
-        <a href="https://bill-yunjie-zhang.github.io/Connect5/" target="_blank"><img src="./images/connect5.jpg" /></a>
-      </div>
-    </section>
-  </div>
-
-  <div id="carouselSection3" style="padding-top: 40px; padding-bottom: 80px;">
-    <h1 style="text-align: center; color: #ffffff;">CSS Arts</h1>
-    <section id="carousel" class="lazy slider" data-sizes="50vw">
-      <div>
-        <a href="https://bill-yunjie-zhang.github.io/forEmerald/" target="_blank"><img
-            src="./images/forEmerald.jpg" /></a>
-      </div>
-    </section>
-  </div>
-
-  <div id="carouselSection4" style="background-color: #727272; padding-top: 40px; padding-bottom: 80px;">
-    <h1 style="text-align: center; color: #ffffff;">Python Projects</h1>
-    <section id="carousel" class="lazy slider" data-sizes="50vw">
-      <div>
-        <a href="https://github.com/Bill-Yunjie-Zhang/edge-Camera" target="_blank"><img
-            src="./images/surprised.jpg" /></a>
-      </div>
-      <div>
-        <a href="https://github.com/Bill-Yunjie-Zhang/keyLogger-Python" target="_blank"><img
-            src="./images/keylogger.gif" /></a>
-      </div>
-    </section>
-  </div>
+  <footer style="position: fixed; bottom: 0px; width: 100%; z-index: 0;">
+    <h2>Farewell</h2>
+  </footer>
 
   <div id="overlay-intro">
     <div class="loader">
@@ -257,7 +286,10 @@
     $(document).on('ready', function () {
       $(".lazy").slick({
         lazyLoad: 'ondemand',
-        infinite: true
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000
       });
     });
 
