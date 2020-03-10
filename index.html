@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BZ's Projects Gallery</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1c1f20;
+    }
+
+    ::-webkit-scrollbar{
+      width: 0
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+      width: 70%;
+      margin: 80px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+    header {
+      background-color: #e8e8e9;
+      position: relative;
+    }
+
+    header:after {
+      content: '';
+      background: url('./header_border.jpg') repeat-x;
+      height: 12px;
+      width: 100%;
+      left: 0;
+      bottom: -12px;
+      position: absolute;
+    }
+
+    header h2 {
+      font: normal 28px 'Rochester', cursive;
+      text-align: center;
+      padding: 5px;
+      background-color: #3a3a3b;
+      box-shadow: 0 1px 2px #888;
+      border: 1px solid #333;
+      width: 200px;
+      margin: auto;
+      color: #fff;
+    }
+
+    header h1 {
+      text-align: center;
+      font: normal 56px 'Bree Serif', sans-serif;
+      color: #494949;
+      padding: 40px 0 60px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>Welcome to</h2>
+    <h1>BZ's Projects Gallery</h1>
+  </header>
+
+  <div id="carouselSection1"style="padding-top: 40px; padding-bottom: 80px;">
+    <h1 style="text-align: center; color: #ffffff">My Websites</h1>
+    <section id="carousel" class="lazy slider" data-sizes="50vw">
+      <div>
+        <a href="https://bill-yunjie-zhang.github.io/BZ-portfolio/" target="_blank"><img
+            src="./images/bzPortfolio.jpg" /></a>
+      </div>
+      <div>
+        <a href="https://geekton.world/" target="_blank"><img src="./images/Geekton.jpg" /></a>
+      </div>
+      <div>
+        <a href="https://bill-yunjie-zhang.github.io/EncryptionWebsite/" target="_blank"><img
+            src="./images/Encryption.jpg" /></a>
+      </div>
+      <div>
+        <a href="https://bill-yunjie-zhang.github.io/CheckCoronaWithDxyWebsite-autoUpdate/" target="_blank"><img
+            src="./images/corona.jpg" /></a>
+      </div>
+    </section>
+  </div>
+
+  <div id="carouselSection2" style="background-color: #727272; padding-top: 40px; padding-bottom: 80px;">
+    <h1 style="text-align: center; color: #ffffff;">React Apps</h1>
+    <section id="carousel" class="lazy slider" data-sizes="50vw">
+      <div>
+        <a href="https://bill-yunjie-zhang.github.io/clearingLandmines/" target="_blank"><img
+            src="./images/landmines.jpg" /></a>
+      </div>
+      <div>
+        <a href="https://bill-yunjie-zhang.github.io/WeatherApp/" target="_blank"><img
+            src="./images/weatherApp.jpg" /></a>
+      </div>
+      <div>
+        <a href="https://bill-yunjie-zhang.github.io/Connect5/" target="_blank"><img src="./images/connect5.jpg" /></a>
+      </div>
+    </section>
+  </div>
+
+  <div id="carouselSection3" style="padding-top: 40px; padding-bottom: 80px;">
+    <h1 style="text-align: center; color: #ffffff;">CSS Arts</h1>
+    <section id="carousel" class="lazy slider" data-sizes="50vw">
+      <div>
+        <a href="https://bill-yunjie-zhang.github.io/forEmerald/" target="_blank"><img
+            src="./images/forEmerald.jpg" /></a>
+      </div>
+    </section>
+  </div>
+
+  <div id="carouselSection4" style="background-color: #727272; padding-top: 40px; padding-bottom: 80px;">
+    <h1 style="text-align: center; color: #ffffff;">Python Projects</h1>
+    <section id="carousel" class="lazy slider" data-sizes="50vw">
+      <div>
+        <a href="https://github.com/Bill-Yunjie-Zhang/edge-Camera" target="_blank"><img
+            src="./images/surprised.jpg" /></a>
+      </div>
+      <div>
+        <a href="https://github.com/Bill-Yunjie-Zhang/keyLogger-Python" target="_blank"><img
+            src="./images/keylogger.gif" /></a>
+      </div>
+    </section>
+  </div>
+
+  <script src="./slick/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function () {
+      $(".lazy").slick({
+        lazyLoad: 'ondemand',
+        infinite: true
+      });
+    });
+  </script>
+
+</body>
+
+</html>
